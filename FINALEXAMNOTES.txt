@@ -1,0 +1,138 @@
+program: software (set of instructions computer follows to perform tasks)
+programmer: person who designs programs (software developer)
+hardware: physical devices that make up computer (4 components)
+CPU, Main memory, secondary storage devices, input and output devices
+CPU: main part of the coputer that runs the program (microprocessors- CPUs on small chips)
+Main memory: where computer stores the program when it is running and data that program uses (RAM - volatile memory used for temporary storage). contents are erased when computer is off
+secondary storage: holds data for longer time, program usually stored here and loaded into main memory when needed
+type: disk drive, solid state drive, flash memory (portable), optical devices
+input: data computer collects from people/ devices
+Disk drives are also input devices because they load programs into main memory
+output devices -(disk drives, cd recorders are output devices)
+software: controls what computer does
+2 types: application(makes computer useful for ever day-games, email, browsers) and systems software
+computer uses binary numbering system
+byte size limit- 0 to 255 [0 all bits off, 255 all bits on]
+characters are converted to numbers using ASCII code (only for 128 characters)
+Unicode coding scheme become=ing standard and compatible ith ASCII, reprsents character in other languages also)
+negative numbers encoding uses 2's complement; real number uses floating point notation
+digital image-pixel, digital music-samples
+CPU executes proram in cycle: fetch (instruction from RAM to CPU), decod, execute
+assembler: converts from assembly to machine language to execute program
+high level language: (no need to know how CPU works), more intuitive; low level language: machine and assembly language
+keywords-predefined wors ; syntax-set of rules;operators;statement
+compiler:converts high level to machine language program
+interpreter: Interprets one instruction at a time, no seperate machine language program
+python interpreter operated in 2 forms/;
+Interactive mode: enter statements on keyboard
+To run the file, or script, type 
+	python filename 
+IDLE : runs in 
+
+
+CHAPTER 2:
+Program development cycle-5 steps
+Designing program - algorithm(set of well defined logical steps)
+pseudo code - fake code, not written or compiled, just design program
+flowchart- graphical representation of program steps, different shapes
+3 step process - input/process/output
+function - prewritten code to perform tasks
+execution order - top to bottom
+enclosed string can have single / double quotes and multiple lines
+comments- to explain your code, ignored by interpreter, begins with #
+end-of-line comment - explains what that line does
+vsariable and assignment operator; variable can be passed as an arguement to begins wth...Variable name should reflect its use; variable names are case sensitive
+print multiple items in print statements using ',' operator, values displayed in order they are passed.
+variable can refer to value of any data type
+garbage collection = removal of values when no longer referred by a variable (done by pythong interpreter)
+numbers with decimal are float
+Type conversion only works if item is valid numeric value, otherwise, throws exception
+2 types of division - (/) and (//)
+positive rounded off to smalles, negative to away from zero
+operations precedences: (), **, [*,/,//,%], [+,-]
+multiline continuation character - '\'
+print function can have end = delimiter, sep = delimiter, b default sep is space
+string concatenation = '+'
+special characters - \n, \t
+format function - numeric value and format specifier and returns back a formatted string
+
+Chapter 3:
+control structure, sequential structure, decision (selection structure)
+if statement - single alternative decision structure
+first line in the syntax is if clause
+boolean expression 
+relational operartor: whether epecific relation exists between 2 operands
+it is possible to have a  block inside another block
+string comparison are case sensitive
+if-elif-else : syntax (elif condition)
+logical operatrors: and, or :(binary operators)(creates complex boolean expressions), takes 2 boolean expressions as operands
+short circuit evalution: deciding the value of compound boolean expression after knowing the value of boolean expression)
+not operator: unary operator, reverses boolean expression result
+boolean variables: takes 2 values, represented by bool data type, commonly used as flags
+
+chapter 4:
+repition structure: executes code multiple times, count controlled loop and condition controlled loop
+while loop: pretest loop
+one exceution of loop: iteration; Requires performing some steps prior to the loop
+infinte loop: loop that doesnt have a way of stopping, repeats until program is interrupted 
+for loop: designed to work with sequence of data items, executes once for each data item
+taget variable: variable assigned at the beginning of assignment; refers data item in the sequence and can be used for calculatio 
+range function can be used with for loop: returns an iterable object : 3 arguements (3rd is step value)
+generating iterable sequence from higher to lower: range(10,0,-1)
+running total: accumulator variable, at end of loop accumulator var refers total
+augmented assignment operator: 
+sentinel: special value that marks end of seqeunce, while reading file, empty line is sentinel; when reach sentinal value, loop terminates
+GIGO: garbage in garbage out(bad in;ut -> bad output)
+input validation loops: inspect input before processin it
+nested loop: inner loop completes their iteratons faster than outer loop
+
+chapter 5:
+fucntion: group of statements that performs certain task
+modularized program: program where each task has its own function (divide and conquer approach)
+why use functions: simple, reuse, beter debug ad test, good teamwork, fast dev
+void and value returning functions: input, int and float are value returning functions
+function names:case sensitive
+function header: 1st line of function
+block: set of statements groupede together
+iterator junps back to part of program that called the function: function return
+main func: called when program starts, calls other funtion when needed; defines mainline logic of the program
+seperte flowchart for each function
+top-down approach: break algorithm into functions
+hierarchy/ structure chart: shows relationships between functions
+scope: part of program where variable may be accessed
+arguement: value passed to the function
+parameter variable: assigned he value of arguements
+scope of paramter: the function itself
+parameter and arguement refers same value
+pass by value: unidirectional commuication between fucntions
+keyword arguement: specifies the parameter to which the vlaue shouldbe assigned to
+Positional arguments must appear first
+If a function needs to assign a value to the global variable, the global variable must be redeclared within the function
+General format: global variable_name
+std library: blackbox to viewer, contains most commonly used fucntions
+modules: file that store functions of library (import module_name at the top)
+for calling functon within a module: use dot operator
+random.randint(1,100): generates random number from 1 to 100
+randrange()
+random(): no arguements
+random.seed(): 
+IPO chart
+Typically accept one or more values as arguments, perform mathematical operation, and return the result
+variables and functions inside module must be called using module name.
+
+chapter 6:
+output file: file to which data is written
+writing data: saving data on a file (data copied from ram to file)
+reading data: retrieving data from file (from file to RAM)
+types of fie: text(contains data converted to text) and binary
+two ways to access files: sequential and direct
+filename extensions:indicates kind of data stored in the file
+
+
+
+
+
+
+
+
+

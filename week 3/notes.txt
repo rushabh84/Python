@@ -1,0 +1,142 @@
+Chatper-
+
+sequence-list and tuples are type of sequences.
+list-mutable and tuples are immutable
+list contains multiple data items of different data types
+print(list_name)-prints entire list
+list()-converts different objetcs to list
+repetition operator (*)-makes copies of list and joins them - format: list * no.
+repetition operator is applied to sequence and integer.
+index of 1st element is 0. negative index means positions relqtive to end of list and starts with -1
+if invalid index is used then IndexError is raised
+len(): returns the number of elements in the list
+index of last element is (len-1), can be used to prevent IndexError 
+Lists are mutable-items in list can be changed: list[1]=10
+List can be concatenated using + operator. list can be concatenated with list only. even augmented assignment += can be used to concatenate list.
+slicing list : some items selected - format list[start:end]. if start not specified then its 0,and end not specified then it is len(list)
+In operator: item in list-> returns true or false; similarly not in operator
+append(item)-item appended at the end of list
+index(item): identify location of 1st item, ValueError if item not found
+remove(item)-removes 1st item
+insert(index, item): inserts ietm at index mentioned
+reverse(): reverses the order of itmes in list
+sort(): sorts item of list in ascending order
+del list[i]: deletes item at index i
+max(list) and min(list): returns the item, sequence is passed as an arguement
+copy list- 2 methods: use for loop and copy item by item OR concatenate old list to new list
+Use list with accumulator variable- average: divide by len(list)
+list can be passes as an arguement
+use for loop to write each element to a file, does not add /n, so you will have to add it at end of each item
+2 dimensional list: items are list in a list, called nested list
+think of list having rows and columns: to process data we will use 2 indexes, and use nested loops
+
+Tuple: same as list, but immutable-once created cant be changed
+format: tuple_name=(itmes)
+access element using index
+len, min, max,*,in,not in and even + still wroks
+slicing works
+tupple doesnt support append, remove, insert,reverse, sort
+why use tuples over list? they are fast to process and safe to use
+tuple()- converts other objects like list to tuples
+
+
+
+CHapter-08
+
+Even strings are sequences
+access each character in string- for char in string: -> useful to count occurrence of a character
+use index-> k = string[0], index starts with 0
+IndexError occurs
+len(string)- finds lenght of string, prevents IndexError in a for loop
+concatenation- appends one string to end of another using + and +=. However operand on the left side of += must be an existing variable otherwise an exception is raised
+strings are immuatble, once created cant be changed. concatenation doesnt change the existig string, but creates a new string and assigns new string to previously used variable
+can't use string[i]= "4", if we use it will create an exception
+slicing: subsrting -> string[start:end];
+Slicing expressions can include a step value and negative indexes relative to end of string
+in operator: string1 in string2; string 1 and string2 can be string literals or variables referencing string literals
+STRING METHODS: format- string.method(arguements)
+string testing methods: (boolean methods) isalnum() - returns true if string is atleast one character in length
+isalpha(), isdigit(), islower(),isupper(),isspace()- returns true if string only contans whitespaces and is atleast one character in length
+string modifications method:
+string comparisons are case sensitive (lower and upper can be used for making it case insensitive comparison)
+string modification methods: 
+lower()- returns a copy of string with all alpha characters converted to lower case, those lower already stays lower and if not alphabetic is left unchanged.
+upper()
+lstrip()-returns a copy of string with all with all leading whitespace removed, leading whitspaces are space, \n and \t.
+rstrip()-trailing whitspaces
+lstrip(char), rstrip(char)
+strip() and strip(char)-leading and trailing char/whtespaces are removed.
+methods to search substrings: endswith(substring) and startswith(substring)- returns true or false
+find(substring): if not found returns -1 or else lower index of substring
+replace(substring, new string)-every occurrenc of substring replced with new sring
+repetition operator-makes multiple copies of string and joins them, left operand is string and right is integer; a variable will refernce a new string containing multiple copies of original string.
+split method: by default space is sepeartor, split("/")-pass other separtor to split method.
+
+Chapter-09
+
+dictionary-object that contains collection of data
+wach element is a key-value pair. (mapping of key to value)
+key must be immutable object
+create a dcitionary- d={key:value,key:value}
+retrieving value from dictionary: v = dictionary[key]
+if key is not there in the dictionary then raises, KeyError
+test whether key is there in dictionary or not using in and not in operator to avoid this eror
+Dictionaries are mutable objects, add a new value -> dictionary[key] = value
+if key exists in the dictionary then value is replaced or else new element added
+delete a key-value pair: 
+del dictionary[key] -> may raise KeyError
+keys are immutable, values are mutable. keys and values can be any type of object. So values stored in single dictionary can be of any data type.
+create empty dictionary: {} or use built-in fucntion dict()
+iterate over each element of dictionary: use for loop
+for keys in dictionary:
+methods of dictionary:
+dict.clear()-removes all elements from dictionary
+get(key, default)-if key not found default is returned, avoids KeyError exception
+items()-returns all key-value pair, returned a sdictionary view. each element in this view is a tuple which contains key and associated value. use for loop to iterate over tuples in view.
+keys()-returns all keys of dictionary as sequence
+pop(key, default)-returns value associated with key and removes key-value pair from dictionary, returns default if key isnt found
+popitem()-rteurns randomly selected key-value pair and removes that pair from dictionary.key-value pair returned as tuple
+values()-returns all value from dictionary as sequence
+
+Sets:
+object that stores collectio of data in mathematical way. all items must be unique, set is unordered, elements can be of different data type
+sets are mutable objects
+len()-rteurns elements in a set
+add()-adds elements to set
+union of 2 sets: a set that contains elements of both sets
+set1.union(set2) OR set1|set2
+intersection of 2 sets: set1.intersection(set2) OR set1&set2
+difference of 2 sets: set1.difference(set2) OR set1-set2
+symmetric difference: set that contains eleents that arent shared by both sets
+set1.symmetric_difference(set2) OR set1^set2
+subset: set1.issubset(set2) OR set1<=set2
+superset: set1.issuperset(set2) OR set1>=set2
+Serialize an object: convert object to stream of bytes that can be easily stored in file.
+pickling-serializing an object
+steps: import picke module, open file, call pickle.dump(object, file), close fle.
+you can pickle multiple objects to one file prior to closing it
+
+unpickling: retrieving pickled object
+steps: import pickle module, open file for writing, pickle.load(file), close
+you can pickle multiple objects from file
+
+
+
+
+
+
+
+
+
+
+len()
+
+
+
+
+
+
+
+
+
+

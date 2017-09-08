@@ -1,0 +1,31 @@
+nltk- natural language processing
+beautifulsoup to extract from html response
+request-web scraping
+
+
+task 1: web scrapinig and get abstract for 15 urls.
+
+task2: treat them as 1 item, perform nlp on it . (standardinze it- run, running, ran- all replaced by run- no synonyms)
+(cats, cat- replace by cat)
+nouns-singular, standardize and scrub
+verb-present form.
+
+compound concepts-difficult concept of scrubing
+preseve compound concepts-1st thing to do in data scrubing (to avoid eliminating and keep relationship between words bcoz those words together mean something)
+
+nltk-performs normalization (replace nouns to singular, verbs to present)
+nltk handles synonyms, 
+all abstracts together and print them in text file.
+create a replacements file(domain specific).
+
+delete your list.
+
+3rd task- use nltk to do frequency count
+
+
+
+request and beautiful soup-for eb scraping
+nltk- nlp
+
+word_tokenized-doesnt recognize ' and -  .if you try to steminize and limit
+re.replace- regularized package

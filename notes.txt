@@ -1,0 +1,127 @@
+http://www.phc4.org/reports/utilization/inpatient/CountyReport20162C003.htm
+https://www.zillow.com/pittsburgh-pa/
+https://legacy.hp-lexicon.org/about/sources/jkr.com/jkr-com-birthdays.html
+
+
+
+
+manifest.xml
+android name=name of java program
+
+activity main:
+tools:context='.interestingpic'
+
+
+
+
+Python:
+writing data to
+output file (data copied from ram to file)
+reading data
+read file
+three step while using file
+types of files and file access methods
+filename extension (indicates type of data stored in file/)
+file object (file object referenced by a variable)
+open function
+location of file
+methods of file object: filevariable.close()
+read method(): Only works if file has been opened for reading; Contents returned as a string
+readline: Line returned as a string, including '\n'
+read position: location of next item to be read
+concatenating /n and stripping it: rsrtip method
+append data
+readline method uses empty string as sentinel
+for loop to read file: reads each liine of file  (syntax) = iterate once over each line
+record and field
+exception
+traceback: error message, line numebr and type and brief description
+many exception prevented by carefu coding (input validatin) and other not (opena fie to read that doesnt exist, convert non-numeric string to an integer)
+exception handler
+try suite
+handler
+if no exception are raised then handler are skipped
+statements in try suite may raise multiple exceptions, exception with exceptionname must be written at last
+exception object: created when error is thrown, contains default error message. syntax, pass exception object to print the message
+else clause: optional, aligned with try except, syntax similar to else in decision making
+finally: after all except clause, ceanup before exiting
+2 ways for exception to go unhandled: except clause with inappropriate exceptionname and statement outside try suite
+
+
+
+
+Recursion:
+A function that calls itself. must have a way to contorl number of times it is called itself. usually involves if else statement which defines when function should return value and when should it call itself
+depth of recursion:
+base case
+recursive case
+Usually the problem is reduced by making one or more parameters smaller at each function call
+direct recursion and indirect recursion
+sumrange(numlist, start, end)
+fibonacci: if n==0 or 1, returns 0 or 1 otherwise fib(n-2)+fib(n-1)  [has 2 base cases]
+
+
+Function:
+function executed in order-divide and conquer approach
+modularized program: each task has its own function
+benefits of modularizing program:
+void and value returning fucntion(input, int and float are examples)
+function name is often verb
+function definition describes what function does
+function header: def , funciton name and ():
+block: group of statements that belong together
+Interpreter jumps back to part of program that called the function Known as function return
+main function: called when program starts, defines mainline logic of the program
+block indentation
+blnak lines in block are ignored
+top-down design: technique to break algorithm in function, each funtion has its own flowchart, end terminal means return
+hierarchical chart=structure chart: defines relationship between functions
+Use input function to have program wait for user to press enter
+local variable and its scope (part of program where variable can be accessesd)
+Different functions may have local variables with the same name 
+arguements
+parameter variable: a variable thats is assigned the value of an arguement, and they both refernce the same variable
+scope of parametere: function in which it is used
+passing multiple arguements: paramter list used instead of parameter
+Arguments are passed by position to corresponding parameters
+PASS BY VALUE: Changes made to a parameter value within the function do not affect the argument.Provides a way for unidirectional communication between one function and another function
+keyword arguement: arguement that sepcifies parameter to which the value should be assigned to. position is irrelevant
+Possible to mix keyword and positional arguments when calling a function. Positional arguments must appear first 
+If a function needs to assign a value to the global variable, the global variable must be redeclared within the function
+why avoid global variable
+global constant: global name that references value that cannot be changed.To simulate global constant in Python, create global variable and do not re-declare it within functions
+Standard library functions: library with built in predefined functions that comes with python., viewed as blackbox.
+Module: files that has functions of standard library. import statement at top of program
+dot notation: module name.
+randrange function: similar to range function, returns a random number from sequence generated. same arguements as range function (returns integer)
+random function: returns random float between 0.0 and 1.0 (returns float)
+uniform function: returns random float but use can provide rane
+seed value: initializes formula to generate random number
+random number seeds: uses system time to produce seeds, random.seed() to sepcify seed
+syntax: return expression
+IPO Chart: tool to design and document function (3 different columns, used intsead of flowchart)
+return multiple values, on the left side of = operator need seperate variables to hold values
+
+MOdularization:  related funcions are grouped together
+module name ends with .py
+menu-drivern programs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

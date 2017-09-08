@@ -1,0 +1,109 @@
+chapter 11: CLASSES AND OBJECT ORIENTED PROGRAMMING
+
+Prodcedural prorgramming: program that has specific functions to perform tasks
+data items passed from one procedure to another, focus is for procedures to perform operations on program's data
+object oriented programming-focuses on creating objects
+object: entity that contains data items and procedures
+data is known as data items and procedures knows as methods. methods perform operations on data items
+encapsulation: combining data item and methods in an objects
+data hiding: hiding object's data attributes from code external to object, access is restricted to only to object's methods.outisde code dont need to know internal structure of object	
+object reusability: object can be resued in multiple programs
+data attributes: defines state of an object. clock-minute, seconds
+public methods: alows external code to manipulate objects. (setters anf getters)
+private methods: for object's internal working
+class: code that specifies data items and methods for particular type of object (similar to blueprint of house)
+instance- an object created of a class(similar to a house built), there can be many instances of class
+clas statements: set of statements that defines class's data attributes and methods. format class class_name:. class names must start with an uppercase character.
+self parameter: required in every method to identify the specific object the method is working on
+initializer method: executed automatically when instance of class is created. it initialized object's dta attributes and assigns self parameter to the object. format: def __init__(self).
+usually is the first method of class definition
+to create a new instance of class: call initializer method. format: instance = class_name(). call methods on this instance using dot operator. reference to self is automatically passed.
+
+data hiding: Objects data attributes must be private. two underscore in front of attribute name
+classes can be stored as modules and modules can be imported in othe programs.
+class methods: can have multiple parameters in addition to self
+__str__ method: what is object's state- data attributes define the state and the values they hold at that moment define the state of object
+this method defines the state of object. it is automatically called when object is passed as an arguement to the print and str fucntion.
+if there are multiple instances of class, then each instance will have its own set of data attributes.
+typically all data attributes of class are private, but class provides methods to access and change them
+accessor methods: allows external code to retrieve vlaue of attributes. returns value for object's data attributes without changing them.
+mutator method: allows external code to change or store object's data attributes
+when you pass object as an arguement you actually pass reference to the object as an arguement. so recieving methods also reference the object and can use mutator methods, data attributes can be accessed using the refernce.
+UML diagrams: standard diagrams to depic structure of object oriented systems. general layout: box with 3 sections- top: nae of class, middle: list of data attribtes, bottom: list of methods
+when developing object oriented systems: 1st goal is identify classes -> write down description of problems, identify all nouns that can be classes, refine the list and keep relevant nouns as classes.
+in the refining step- remove nouns that appear twice, mean same thing, can be assigned to a variable and is simple, 
+
+
+CHAPTER 12: POLYMORPHISM
+many objects are specialized version of general objects. Example: grasshoppers and bees are specialized types of insect. they will have additional characteristics unique to them.
+Inheritance is 'IS-A' relationship. It exists when one object is specialized version of another general object. Specialized object has all the characteristics of the general object plus unique characteristics
+superclass(base class)- general class
+subclass(derived class) - specialized class : it is an extended version of superclass. inherits all the data attributes and methodsof superclass and can have its own characteristics.
+to indicate inheritance: class class_name(superclass_name)
+the initializer method of subclass will first call initializer method of superclass and then initialize unique data attributes. unique method definitions must be written..
+In UML diagram inheritance is represented by line with open headed arrow towards superclass from subclass. and sections in the box will have only unique attributes and methods.
+Polymorphism: objects ability to take multiple forms. write a method in superclass and override it in subclass, subclass method written with same name.  and another beahvior is ability to call the correct version of overridden method depending on the type of the object that called for it.
+isinstance function: determines whether object is instance of class. format: isinstance(object, class)
+AttributeError exception: raised when method receives an object which is not instance of right class.
+
+CHAPTER 13: GUI
+user interface: part of computer that interacts with user
+command line interface: displays a command and user can enter commands which will be executed
+graphical user interface: user interacts with computer through graphical elements on the screen
+Dialog box: small windows that displays information and lets user perform action. Responsible for most of the interaction through GUI
+GUI environment: GUI programs are event driven. in text based environment, user enters data in the order decided by the program, i.e. program decides the order in which things happen
+here user determines the order in which things happen, user causes events to occur and program responds to events.
+tkinter module comes with python and lets you create GUI programs
+widget: simple graphical element that user can interact with 
+while developing GUI programs, if you want to take object oriented approach then make a class and write the code in the __init__ method to build GUI.
+display text using label widget: label widegt displays single line of text 
+FORMAT: tkinter.Label(self.main_window, text = 'my text')
+First argument references the root widget, second argument shows text that should appear in label
+pack method: called for each widget, determines the position of widegt on the window and makes it visible when window is displayed.
+pack method receives an arguement to specify position. position depends on the order in which widgets were added to the windows. valid arguements = side = 'top/left/right'
+
+
+frame widget: container that holds other widgets. widgets are added to the container that contains them. used to organize group of widgets in the window. eg:
+tkinter.Label(self.top_frame, text = 'hi')
+Button widget: widget that user clicks to perform some action. can contain text(that appeard on the face of button) and callback funtion : function that executes when button is clicked
+(event handler)
+info dialog box: format: Import tkinter.messagebox module
+tkinter.messagebox.showinfo(title,  message) -> title appears on the title bar and message in the main part
+Quit button: closes the program when clicked, callback funciton is set to root widget's destroy method
+entry widget: rectangular area that allows user to type single line of text, gathers input for GUI program; typically followed by button widget, callback function retrieve data from entry widget, returns a string
+can use label widget to dynamically display data, can create empty label widget on window and write code that displays data i it after button click
+StringVar class: tkinter module class used along with label widget to display data; any value stored in stringvar object is displayed in label widgets; StringVar object associated with label widget
+
+Radio button:
+circle that appears filled when selectd; useful when user wants to select one option from many
+radiobutton widgets are mutually exclusive; only one radiobutton can be selected 
+IntVar class: used along with Radiobutton widgets; a group of radiobutton widgets has same IntVar object; each radiobutton has unique integer; when radiobutton selected its integer value is stored in intvar object
+you can have callback function associated with radiobutton widgets; provide an arguement command= callback function i .e. command = self.method(); user will no longer have to click submit button
+
+check button: a tick/ check mark indicates its selected; user can select multiple multiple check buttons from the group. uses tkinter's checbutton class, each checkbutton will have its own IntVar object.
+
+canvas: rectangular area used to display graphics
+checkbutton- button in either on/off position
+label -displays single line of text/image
+message- displays multiple lines of text
+entry
+text- allows user to enter multiple lines of text
+toplevel-container like frame, dislayed in its own window
+scrollbar-used with other widgets to provide scrolling ability
+menu- list of menu choices when user clicks menubutton widgets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
